@@ -1,0 +1,15 @@
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.CalndarGridItem.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.EventItem.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.EventRemind.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.EventUI.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.MainCalendar.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.RoundedControlButton.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.GenerateResource.cache
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Calendar.exe.config
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Calendar.exe
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Calendar.pdb
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.Properties.Resources.resources
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.exe
+C:\Users\a3513\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\Calendar.pdb

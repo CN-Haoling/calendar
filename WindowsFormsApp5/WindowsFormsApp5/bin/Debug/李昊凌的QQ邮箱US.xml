@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfMail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Mail>
+    <MailBody />
+    <Subject>11111</Subject>
+    <Date>2020-06-19T20:44:20+08:00</Date>
+    <From>791331362@qq.com</From>
+    <Id>1130</Id>
+  </Mail>
+  <Mail>
+    <MailBody />
+    <Subject>2222222</Subject>
+    <Date>2020-06-19T20:44:28+08:00</Date>
+    <From>791331362@qq.com</From>
+    <Id>1131</Id>
+  </Mail>
+</ArrayOfMail>

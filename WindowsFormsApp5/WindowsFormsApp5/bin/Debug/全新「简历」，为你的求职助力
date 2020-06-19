@@ -1,0 +1,443 @@
+﻿
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>功能介绍页面</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <!-- sysmailForm此标识位主要是给系统邮件需要执行js代码来使用的 -->
+  <meta name="keywords" content="sysmailForm">
+
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    div,
+    ul,
+    ol,
+    li,
+    img {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Helvetica, "lucida Grande", PingFang SC, Microsoft YaHei;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    html {
+      padding: 0 !important;
+    }
+
+    .mailcontent {
+      padding: 16px 16px 5px !important;
+    }
+
+    .img-header {
+      display: block;
+      width: 100%;
+      margin-left: 0 !important;
+    }
+
+    .is-hidden {
+      display: none;
+    }
+
+    .section-body {
+      margin: 30px 28.5px 48px 23px;
+    }
+
+    .section:first-child {
+      margin-top: 0;
+    }
+
+    .section {
+      position: relative;
+      margin-top: 48px;
+    }
+
+    .section-logo {
+      display: inline-block;
+      width: 63px;
+      height: 63px;
+    }
+
+    .section-block {
+      position: absolute;
+      top: 50%;
+      left: 70px;
+      display: inline-block;
+      width: 75%;
+      margin-left: 20px;
+      transform: translate(0, -50%);
+    }
+
+    .section-title {
+      color: #33312e;
+      font-size: 16px !important;
+      font-weight: bold;
+    }
+
+    .section-text {
+      margin-top: 10px;
+      color: #8e8e93;
+      font-size: 12px !important;
+    }
+
+    #img-footer {
+      width: calc(100% + 32px) !important;
+      max-width: 200% !important;
+      height: 132px !important;
+      margin-left: -16px !important;
+      background-image: url('https://rescdn.qqmail.com/qqmail/images/resume_footer.png');
+      background-size: 100%;
+      background-repeat:no-repeat;
+    }
+
+    .web-body {
+      position: relative;
+      top: 34px;
+      width: 700px;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #e6e8eb;
+    }
+
+    .web-img-header {
+      display: block;
+      width: 100%;
+      height: 211px;
+      margin: 0 auto 50px;
+    }
+
+    .web-section-logo {
+      display: block;
+      width: 63px;
+      height: 63px;
+      margin-bottom: 24px;
+    }
+
+    .web-section {
+      display: inline-block;
+      width: 226px;
+      height: 153px;
+    }
+
+    .web-section:nth-child(2) {
+      margin-left: 105px;
+    }
+
+    .web-section-second {
+      margin-left: 105px;
+    }
+
+    .web-section-body {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      margin: 0 auto;
+      margin-left: 73px;
+    }
+
+    .system-resume-popularization {
+      position: relative;
+      top: 0px;
+      left: 50%;
+      width: 150px;
+      padding: 8px 10px;
+      margin-left: -75px;
+      color: white !important;
+      text-align: center;
+      background: #508ff2;
+      border-width: 0;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .web-section-body:nth-child(2) {
+      margin-top: 50px;
+    }
+
+    .web-section-body-second {
+      margin-top: 50px;
+    }
+
+    .web-img-footer {
+      display: block;
+      width: 100%;
+      height: 116px;
+      margin: 80px auto 0;
+    }
+
+    #web-jump-resume {
+      cursor: pointer;
+    }
+
+    .web-section .section-title {
+      font-size: 16px !important;
+    }
+
+    .web-section .section-text {
+      font-size: 12px !important;
+    }
+
+    .mailcontent {
+      padding: 0 !important;
+    }
+
+    .mailcontent #app_eml {
+      padding: 16px 16px 5px !important;
+    }
+
+    @media screen and (max-width:700px) {
+      .section-body {
+        margin: 30px 28.5px 48px 23px;
+      }
+
+      .section {
+        margin-top: 48px;
+      }
+
+      .section-logo {
+        width: 63px;
+        height: 63px;
+      }
+
+      .section-block {
+        position: absolute;
+        top: 50%;
+        left: 70px;
+        display: inline-block;
+        width: 75%;
+        margin-left: 20px;
+        transform: translate(0, -50%);
+      }
+
+      .section-title {
+        font-size: 16px !important;
+      }
+
+      .section-text {
+        font-size: 12px !important;
+      }
+    }
+    @media screen and (min-width:700px) {
+      #web_eml {
+        display: block;
+      }
+      #app_eml {
+        display: none;
+      }
+    }
+    /* 兼容ios暗黑模式*/
+    @media (prefers-color-scheme: dark) {
+      #img-footer {
+        background-image: url('https://rescdn.qqmail.com/qqmail/images/darkTopic.png') !important;
+        filter: invert(1) hue-rotate(180deg);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="web_eml" class="web-body  is-hidden">
+    <img src="https://rescdn.qqmail.com/qqmail/images/resume_web_header.png" class="web-img-header">
+    <div>
+      <div class="web-section-body">
+        <div class="web-section">
+          <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_1.png" class="web-section-logo">
+          <div>
+            <p class="section-title">操作简易，轻松创建专业简历</p>
+            <p class="section-text">专业模块，合理归纳信息。清爽模板，让面试官轻松阅读。</p>
+          </div>
+        </div>
+        <div class="web-section web-section-second">
+          <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_2.png" class="web-section-logo">
+          <div>
+            <p class="section-title">管理多份简历，投递多种岗位</p>
+            <p class="section-text">简历份数无上限。简历信息可保存为素材，快捷创建新简历。</p>
+          </div>
+        </div>
+      </div>
+      <div class="web-section-body web-section-body-second" style="margin-bottom: 70px;">
+        <div class="web-section">
+          <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_3.png" class="web-section-logo">
+          <div>
+            <p class="section-title">多端导出及发送</p>
+            <p class="section-text">在线简历可以一键邮件发送或导出。在手机上还可以发送到微信、QQ和更多应用。</p>
+          </div>
+        </div>
+        <div class="web-section web-section-second" style="vertical-align:top">
+          <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_4.png" class="web-section-logo">
+          <div>
+            <p class="section-title">查看招聘岗位，一键同步简历</p>
+            <p class="section-text">浏览正在招聘的岗位，并将简历一键同步，让你求职快人一步。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="web-jump-resume" class="system-resume-popularization is-hidden">立即体验</div>
+    <img src="https://rescdn.qqmail.com/qqmail/images/resume_web_footer.png" class="web-img-footer">
+  </div>
+  <div id="app_eml" class="xm_app_container" style="padding: 16px 16px 5px !important;">
+    <img src="https://rescdn.qqmail.com/qqmail/images/resume_header.png" class="img-header"
+      style="margin-left: 0 !important;">
+    <div class="section-body">
+      <div class="section">
+        <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_1.png" class="section-logo" />
+        <div class="section-block">
+          <p class="section-title">操作简易，轻松创建专业简历</p>
+          <p class="section-text">专业模块，合理归纳信息。清爽模板，让面试官轻松阅读。</p>
+        </div>
+      </div>
+      <div class="section">
+        <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_2.png" class="section-logo" />
+        <div class="section-block">
+          <p class="section-title">管理多份简历，投递多种岗位</p>
+          <p class="section-text">简历份数无上限。简历信息可保存为素材，快捷创建新简历。</p>
+        </div>
+      </div>
+      <div class="section">
+        <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_3.png" class="section-logo" />
+        <div class="section-block">
+          <p class="section-title">多端导出及发送</p>
+          <p class="section-text">在线简历可以一键邮件发送或导出。在手机上还可以发送到微信、QQ和更多应用。</p>
+        </div>
+      </div>
+      <div class="section">
+        <img src="https://rescdn.qqmail.com/qqmail/images/resume_section_logo_4.png" class="section-logo" />
+        <div class="section-block">
+          <p class="section-title">查看招聘岗位，一键同步简历</p>
+          <p class="section-text">浏览正在招聘的岗位，并将简历一键同步，让你求职快人一步。</p>
+        </div>
+      </div>
+    </div>
+    <div id="img-footer"></div>
+    
+  </div>
+  <script type="text/javascript">
+    console.log('begin sysmail javascript')
+      if (isWeb()) {
+        showWebPage()
+        showBtn()
+      } else if(isApp()) {
+      } else {
+        if(screen.width > 700) {
+          showWebPage()
+        }
+      }
+
+    function isWeb() {
+      var isWebmail = window.getTop && window.getTop() && typeof window.getTop().getUserInfo === 'function'
+      var isXmail = window.isXmail
+      return isWebmail || isXmail
+    }
+
+  //   // 当需要在mailapp上跳转路径的时候需要使用到isApp的判断
+    function isApp() {
+      return /mailapp|QQMail/i.test(navigator.userAgent)
+    }
+
+    function showWebPage() {
+      try {
+        removeClass(document.getElementById('web_eml'), 'is-hidden')
+        addClass(document.getElementById('app_eml'), 'is-hidden')
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    function addClass(element, name) {
+      var baseClass = element.getAttribute('class')
+      if (baseClass.indexOf(name) === -1) {
+        var newClass = baseClass + ' ' + name
+        element.setAttribute('class', newClass)
+      }
+    }
+
+    function removeClass(element, name) {
+      var baseClass = element.getAttribute('class')
+      if (baseClass.indexOf(name) !== -1) {
+        var newClass = baseClass
+          .split(name)
+          .join(' ')
+          .replace(/\s+/g, ' ')
+        element.setAttribute('class', newClass)
+      }
+    }
+  //   // 展示按钮
+    function showBtn() {
+      removeClass(document.getElementById('web-jump-resume'), 'is-hidden')
+      addJumpEventToWebMail()
+    }
+    // 兼容ie浏览器
+    function addJumpEventToWebMail() {
+      var jumpDiv = document.getElementById("web-jump-resume")
+      if (jumpDiv.attachEvent) {
+        jumpDiv.attachEvent('onclick', toResume)
+      } else {
+        jumpDiv.onclick = toResume
+      }
+    }
+
+    function toResume() {
+      if(window.isXmail) {
+        window.location.href = 'https://wx.mail.qq.com/home/index?sid=' + getQueryVariable('sid') + '#/resume'
+        return
+      }
+      // var sid = window.getTop().GetSid()
+      // var cookie_sid = window.getTop().encodeURIComponent(getTop().getCookie('sid'))
+      // window.location.href = 'https://wx.mail.qq.com/resume/login?enc=3&sid=' + sid + '&cookie_sid=' + cookie_sid
+      // window.getTop().switchFolder('folder_resume')
+      if(getTop && getTop().jumpToResume) {
+        getTop().jumpToResume()
+      }
+    }
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1)
+      var vars = query.split("&")
+      for (var i=0;i<vars.length;i++) {
+          var pair = vars[i].split("=")
+          if(pair[0] == variable){return pair[1]}
+      }
+      return(false)
+    }
+  </script>
+  <img class="countKv"
+    src="https://mail.qq.com/cgi-bin/do?check=false&action=tgkv&uin=$RECEIVER_UIN$&kv=spread|20200514|resume_promotion|all"
+    style="position:absolute; left:-10000px; top:-10000px;" />
+  <img class="countKv"
+    src="https://mail.qq.com/cgi-bin/do?check=false&action=tgkv&uin=$RECEIVER_UIN$&kv=spread|20200514|resume_promotion|$PLATFORM$"
+    style="position:absolute; left:-10000px; top:-10000px;" />
+  <script type="text/javascript">
+    try {
+      getTop().waitFor(function () {
+          return getTop().readmailSpread;
+        },
+        function (_abOK) {
+          if (_abOK) {
+            getTop().readmailSpread(window, "", {
+              isNname: true
+            });
+          }
+        }
+      );
+    } catch (e) {}
+  </script>
+</body>
+
+</html>

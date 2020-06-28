@@ -16,7 +16,9 @@ namespace WindowsFormsApp5
         Users user1 = new Users();
         
         List<User> users = new List<User>();
+       
         List<string> names = new List<string>();
+        List<string> namet = new List<string>();
 
         public User now;
         public loginform()
@@ -29,13 +31,16 @@ namespace WindowsFormsApp5
 
         public void refreshUser()
         {
+            users = new List<User>();
             users = user1.getAll();
+            names = new List<string>();
             foreach (User user in users)
             {
                 names.Add(user.username);
 
 
             }
+            comboBox1.DataSource = namet;
             comboBox1.DataSource = names;
             comboBox1.Refresh();
         }

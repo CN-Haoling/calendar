@@ -122,12 +122,11 @@
             // panelparent
             // 
             this.panelparent.AutoScroll = true;
-            this.panelparent.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelparent.AutoSize = true;
             this.panelparent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelparent.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelparent.Location = new System.Drawing.Point(158, 0);
+            this.panelparent.Location = new System.Drawing.Point(146, 29);
             this.panelparent.Name = "panelparent";
-            this.panelparent.Size = new System.Drawing.Size(1036, 538);
+            this.panelparent.Size = new System.Drawing.Size(1036, 497);
             this.panelparent.TabIndex = 28;
             this.panelparent.AutoSizeChanged += new System.EventHandler(this.mainform_Resize);
             this.panelparent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelparent_Paint);
@@ -136,6 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1194, 538);
             this.Controls.Add(this.panelparent);
             this.Controls.Add(this.label4);

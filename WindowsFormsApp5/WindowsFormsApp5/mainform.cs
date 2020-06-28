@@ -50,7 +50,7 @@ namespace WindowsFormsApp5
             Calendar.MainCalendar calender  = new Calendar.MainCalendar(true);
             calender.TopLevel = false;
             calender.FormBorderStyle = FormBorderStyle.None;
-            calender.Dock = DockStyle.Fill;
+            calender.Dock = DockStyle.Left;
 
             //清空Panel里面的控件
 
@@ -59,7 +59,7 @@ namespace WindowsFormsApp5
             //加入控件
 
             this.panelparent.Controls.Add(calender);
-            //tabPage1.Controls.Add(calender);
+
             //让窗体显示
 
             calender.Show();
@@ -166,6 +166,7 @@ namespace WindowsFormsApp5
             float newx = (this.Width) / x;
             float newy = (this.Height) / y;
             setControls(newx, newy, this);
+            
             panelparent.Refresh();
         }
 

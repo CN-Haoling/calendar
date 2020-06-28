@@ -95,9 +95,9 @@
             // 
             // addFile
             // 
-            this.addFile.Location = new System.Drawing.Point(477, 56);
+            this.addFile.Location = new System.Drawing.Point(477, 40);
             this.addFile.Name = "addFile";
-            this.addFile.Size = new System.Drawing.Size(75, 23);
+            this.addFile.Size = new System.Drawing.Size(110, 39);
             this.addFile.TabIndex = 6;
             this.addFile.Text = "添加附件";
             this.addFile.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(143, 398);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(84, 40);
             this.button2.TabIndex = 7;
             this.button2.Text = "发送！";
             this.button2.UseVisualStyleBackColor = true;

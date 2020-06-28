@@ -54,10 +54,9 @@
             this.currentYear.AutoSize = true;
             this.currentYear.Font = new System.Drawing.Font("微软雅黑", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentYear.ForeColor = System.Drawing.Color.White;
-            this.currentYear.Location = new System.Drawing.Point(255, 22);
-            this.currentYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentYear.Location = new System.Drawing.Point(191, 18);
             this.currentYear.Name = "currentYear";
-            this.currentYear.Size = new System.Drawing.Size(104, 45);
+            this.currentYear.Size = new System.Drawing.Size(83, 36);
             this.currentYear.TabIndex = 0;
             this.currentYear.Text = "2018";
             // 
@@ -73,19 +72,17 @@
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(617, 626);
+            this.mainPanel.Size = new System.Drawing.Size(463, 501);
             this.mainPanel.TabIndex = 2;
             // 
             // closeApp
             // 
             this.closeApp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeApp.Image = global::Calendar.Properties.Resources.closeApp;
-            this.closeApp.Location = new System.Drawing.Point(8, 5);
-            this.closeApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.closeApp.Location = new System.Drawing.Point(6, 4);
             this.closeApp.Name = "closeApp";
-            this.closeApp.Size = new System.Drawing.Size(31, 26);
+            this.closeApp.Size = new System.Drawing.Size(23, 21);
             this.closeApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeApp.TabIndex = 5;
             this.closeApp.TabStop = false;
@@ -94,20 +91,18 @@
             // 
             this.gridView.AllowDrop = true;
             this.gridView.Font = new System.Drawing.Font("微软雅黑", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridView.Location = new System.Drawing.Point(74, 71);
-            this.gridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridView.Location = new System.Drawing.Point(24, 110);
             this.gridView.Name = "gridView";
-            this.gridView.Size = new System.Drawing.Size(476, 406);
+            this.gridView.Size = new System.Drawing.Size(420, 384);
             this.gridView.TabIndex = 2;
             // 
             // currentMonth
             // 
-            this.currentMonth.Font = new System.Drawing.Font("微软雅黑", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentMonth.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentMonth.ForeColor = System.Drawing.Color.White;
-            this.currentMonth.Location = new System.Drawing.Point(14, 31);
-            this.currentMonth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentMonth.Location = new System.Drawing.Point(27, 66);
             this.currentMonth.Name = "currentMonth";
-            this.currentMonth.Size = new System.Drawing.Size(170, 30);
+            this.currentMonth.Size = new System.Drawing.Size(412, 24);
             this.currentMonth.TabIndex = 1;
             this.currentMonth.Text = "December";
             this.currentMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,20 +118,18 @@
             this.panel1.Controls.Add(this.currentDayOfMonth);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(614, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(460, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 626);
+            this.panel1.Size = new System.Drawing.Size(340, 501);
             this.panel1.TabIndex = 6;
             // 
             // addNoteToDay
             // 
             this.addNoteToDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addNoteToDay.Image = global::Calendar.Properties.Resources.icon_add;
-            this.addNoteToDay.Location = new System.Drawing.Point(8, 109);
-            this.addNoteToDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addNoteToDay.Location = new System.Drawing.Point(6, 87);
             this.addNoteToDay.Name = "addNoteToDay";
-            this.addNoteToDay.Size = new System.Drawing.Size(32, 28);
+            this.addNoteToDay.Size = new System.Drawing.Size(24, 22);
             this.addNoteToDay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.addNoteToDay.TabIndex = 6;
             this.addNoteToDay.TabStop = false;
@@ -148,10 +141,9 @@
             this.eventsScrollingView.AutoScroll = true;
             this.eventsScrollingView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.eventsScrollingView.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.eventsScrollingView.Location = new System.Drawing.Point(0, 141);
-            this.eventsScrollingView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eventsScrollingView.Location = new System.Drawing.Point(0, 113);
             this.eventsScrollingView.Name = "eventsScrollingView";
-            this.eventsScrollingView.Size = new System.Drawing.Size(453, 485);
+            this.eventsScrollingView.Size = new System.Drawing.Size(340, 388);
             this.eventsScrollingView.TabIndex = 5;
             this.eventsScrollingView.WrapContents = false;
             // 
@@ -160,10 +152,9 @@
             this.weatherConditionText.AutoSize = true;
             this.weatherConditionText.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weatherConditionText.ForeColor = System.Drawing.Color.White;
-            this.weatherConditionText.Location = new System.Drawing.Point(263, 45);
-            this.weatherConditionText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.weatherConditionText.Location = new System.Drawing.Point(197, 36);
             this.weatherConditionText.Name = "weatherConditionText";
-            this.weatherConditionText.Size = new System.Drawing.Size(0, 20);
+            this.weatherConditionText.Size = new System.Drawing.Size(0, 16);
             this.weatherConditionText.TabIndex = 4;
             // 
             // weatherDegree
@@ -171,10 +162,9 @@
             this.weatherDegree.AutoSize = true;
             this.weatherDegree.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weatherDegree.ForeColor = System.Drawing.Color.White;
-            this.weatherDegree.Location = new System.Drawing.Point(264, 26);
-            this.weatherDegree.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.weatherDegree.Location = new System.Drawing.Point(198, 21);
             this.weatherDegree.Name = "weatherDegree";
-            this.weatherDegree.Size = new System.Drawing.Size(0, 20);
+            this.weatherDegree.Size = new System.Drawing.Size(0, 16);
             this.weatherDegree.TabIndex = 3;
             // 
             // currentDayOfWeek
@@ -182,22 +172,20 @@
             this.currentDayOfWeek.AutoSize = true;
             this.currentDayOfWeek.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentDayOfWeek.ForeColor = System.Drawing.Color.White;
-            this.currentDayOfWeek.Location = new System.Drawing.Point(105, 5);
-            this.currentDayOfWeek.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentDayOfWeek.Location = new System.Drawing.Point(230, 42);
             this.currentDayOfWeek.Name = "currentDayOfWeek";
-            this.currentDayOfWeek.Size = new System.Drawing.Size(116, 30);
+            this.currentDayOfWeek.Size = new System.Drawing.Size(89, 24);
             this.currentDayOfWeek.TabIndex = 1;
             this.currentDayOfWeek.Text = "Thursday";
             // 
             // currentDayOfMonth
             // 
-            this.currentDayOfMonth.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentDayOfMonth.Font = new System.Drawing.Font("微软雅黑", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.currentDayOfMonth.ForeColor = System.Drawing.Color.White;
             this.currentDayOfMonth.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.currentDayOfMonth.Location = new System.Drawing.Point(89, 5);
-            this.currentDayOfMonth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentDayOfMonth.Location = new System.Drawing.Point(67, 4);
             this.currentDayOfMonth.Name = "currentDayOfMonth";
-            this.currentDayOfMonth.Size = new System.Drawing.Size(144, 94);
+            this.currentDayOfMonth.Size = new System.Drawing.Size(108, 75);
             this.currentDayOfMonth.TabIndex = 0;
             this.currentDayOfMonth.Text = "15";
             this.currentDayOfMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,32 +193,29 @@
             // prevMonthBtn
             // 
             this.prevMonthBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.prevMonthBtn.Location = new System.Drawing.Point(193, 26);
-            this.prevMonthBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.prevMonthBtn.Location = new System.Drawing.Point(145, 21);
             this.prevMonthBtn.Name = "prevMonthBtn";
-            this.prevMonthBtn.Size = new System.Drawing.Size(40, 35);
+            this.prevMonthBtn.Size = new System.Drawing.Size(30, 28);
             this.prevMonthBtn.TabIndex = 4;
             // 
             // nextMonthBtn
             // 
             this.nextMonthBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nextMonthBtn.Location = new System.Drawing.Point(383, 26);
-            this.nextMonthBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.nextMonthBtn.Location = new System.Drawing.Point(287, 21);
             this.nextMonthBtn.Name = "nextMonthBtn";
-            this.nextMonthBtn.Size = new System.Drawing.Size(40, 35);
+            this.nextMonthBtn.Size = new System.Drawing.Size(30, 28);
             this.nextMonthBtn.TabIndex = 3;
             // 
             // MainCalendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 626);
+            this.ClientSize = new System.Drawing.Size(800, 501);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainCalendar";
             this.Text = "日历备忘";
             this.Load += new System.EventHandler(this.OnStartup);

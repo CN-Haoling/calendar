@@ -55,5 +55,21 @@ namespace WindowsFormsApp5
             send form1 = new send(mesg.From.Address,Sender);
             form1.Show();
         }
+
+        private void sizeChaneg(object sender, EventArgs e)
+        {
+            webBrowser1.Height = 1024;
+
+        }
+
+        private void FormDetail_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rs(object sender, EventArgs e)
+        {
+            webBrowser1.Height = this.Size.Height -140;
+        }
     }
 }

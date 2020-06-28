@@ -33,17 +33,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.attachmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nowMailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.mCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attachmentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nowMailsBindingSource)).BeginInit();
@@ -81,6 +81,21 @@
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "下载";
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "下载";
+            // 
             // attachmentsBindingSource
             // 
             this.attachmentsBindingSource.DataMember = "Attachments";
@@ -90,6 +105,10 @@
             // 
             this.nowMailsBindingSource.DataMember = "NowMails";
             this.nowMailsBindingSource.DataSource = this.mCBindingSource;
+            // 
+            // mCBindingSource
+            // 
+            this.mCBindingSource.DataSource = typeof(MailControl.MC);
             // 
             // label1
             // 
@@ -146,25 +165,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // mCBindingSource
-            // 
-            this.mCBindingSource.DataSource = typeof(MailControl.MC);
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "下载";
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.Text = "下载";
-            // 
             // FormDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -181,6 +181,9 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FormDetail";
             this.Text = "FormDetail";
+            this.MaximumSizeChanged += new System.EventHandler(this.sizeChaneg);
+            this.Load += new System.EventHandler(this.FormDetail_Load);
+            this.Resize += new System.EventHandler(this.rs);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attachmentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nowMailsBindingSource)).EndInit();

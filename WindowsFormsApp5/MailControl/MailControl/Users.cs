@@ -41,6 +41,7 @@ namespace MailControl
         }
         public List<User> getAll()
         {
+            users = new List<User>();
             var table = userdb.ReadFullTable("tableA");
             while (table.Read())
             {
